@@ -1,0 +1,74 @@
+{
+    "P-0": {
+      "Tid": "P-0",
+      "start": 0,
+      "duration": 0,
+      "end": 0,
+      "responsible": "開始",
+      "pred": ["P-0"]
+    },
+    "P-1": {
+      "Tid": "P-1",
+      "start": 0,
+      "duration": 10,
+      "end": 30,
+      "responsible": "野菜切り終わり",
+      "pred": ["P-0"]
+    },
+    "P-2": {
+      "Tid": "P-2",
+      "start": 0,
+      "duration": 5,
+      "end": 0,
+      "responsible": "炒め終わり",
+      "pred": ["P-0", "P-1"]
+    },
+    "P-3": {
+      "Tid": "P-3",
+      "start": 0,
+      "duration": 10,
+      "end": 0,
+      "responsible": "煮終わり",
+      "pred": ["P-2"]
+    },
+    "P-4": {
+      "Tid": "P-4",
+      "start": 0,
+      "duration": 50,
+      "end": 0,
+      "responsible": "",
+      "pred": ["P-3", "P-8"]
+    },
+    "P-5": {
+      "Tid": "P-5",
+      "start": 0,
+      "duration": 2,
+      "end": 0,
+      "responsible": "カレー完成",
+      "pred": ["P-4"]
+    },
+    "P-6": {
+      "Tid": "P-6",
+      "start": 3,
+      "duration": 3,
+      "end": 0,
+      "responsible": "米研ぎ終わり",
+      "pred": ["P-0"]
+    },
+    "P-7": {
+      "Tid": "P-7",
+      "start": 0,
+      "duration": 45,
+      "end": 0,
+      "responsible": "米炊き終わり",
+      "pred": ["P-6"]
+    },
+    "P-8": {
+      "Tid": "P-8",
+      "start": 0,
+      "duration": 2,
+      "end": 0,
+      "responsible": "",
+      "pred": ["P-7"]
+    }
+}

@@ -1,0 +1,22 @@
+digraph g {
+	node [height=.1 shape=Mrecord]
+	rankdir=LR
+	node [fontname="MS Gothic" shape=record]
+	"P-0" [label="<f0>P-0 |{0|0}|<f2>Start" color=blue fillcolor=grey93 style=filled]
+	"P-1" [label="<f0>P-1 |{10|30}|<f2>Finish cutting" color=blue fillcolor=grey93 style=filled]
+	"P-2" [label="<f0>P-2 |{15|35}|<f2>Finish cooking vegetables" color=blue fillcolor=grey93 style=filled]
+	"P-3" [label="<f0>P-3 |{25|45}|<f2>Finish boiling" color=blue fillcolor=grey93 style=filled]
+	"P-4" [label="<f0>P-4 |{50|50}|<f2>Finish making curry" color=blue fillcolor=grey93 style=filled]
+	"P-5" [label="<f0>P-5 |{52|52}|<f2>Complete making curry and rice" color=blue fillcolor=grey93 style=filled]
+	"P-6" [label="<f0>P-6 |{3|3}|<f2>Finish washing rice" color=blue fillcolor=grey93 style=filled]
+	"P-7" [label="<f0>P-7 |{48|48}|<f2>Finish cooking rice" color=blue fillcolor=grey93 style=filled]
+	"P-0" -> "P-1" [label="Cutting vegetables\n10"]
+	"P-0" -> "P-2" [label="Grilling meat\n3"]
+	"P-1" -> "P-2" [label="Cooking vegetables\n5"]
+	"P-2" -> "P-3" [label="Boiling\n10"]
+	"P-3" -> "P-4" [label="Adding curry powder\n5"]
+	"P-7" -> "P-4" [label="Serving rice onto a plate\n2" color=red]
+	"P-4" -> "P-5" [label="Adding curry roux\n2" color=red]
+	"P-0" -> "P-6" [label="Washing rice\n3" color=red]
+	"P-6" -> "P-7" [label="Cooking rice\n45" color=red]
+}
